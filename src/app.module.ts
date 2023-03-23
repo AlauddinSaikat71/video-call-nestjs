@@ -1,10 +1,8 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { AudioCallModule } from './modules/audio-call/audio-call.module';
+import { VideoCallModule } from './modules/video-call/video-call.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [VideoCallModule, AudioCallModule],
 })
 export class AppModule {}
