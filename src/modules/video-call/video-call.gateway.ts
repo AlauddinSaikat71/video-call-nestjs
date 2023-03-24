@@ -1,6 +1,6 @@
+import { CallGateway } from '@app/common/gateways/call.gateways';
 import { SubscribeMessage, WebSocketGateway } from '@nestjs/websockets';
 import { Socket } from 'socket.io';
-import { CallGateway } from 'src/common/call.gateways';
 import { VIDEO_CHAT_GATEWAY_PORT } from 'src/config/config';
 
 @WebSocketGateway(VIDEO_CHAT_GATEWAY_PORT)
